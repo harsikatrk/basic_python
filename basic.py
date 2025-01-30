@@ -1,0 +1,24 @@
+print("")
+print(55)
+print("hello")
+var1=33
+print(var1)
+print(type(var1))
+var2=8.9
+print(var2)
+print(type(var2))
+var3="string"
+print(type(var3))
+var4=(1,2,3)
+print(type(var4))
+var5=[1,2,3,4]
+print(type(var5))
+var6=False
+print(type(var6))
+var7={1,2,3,4}
+print(type(var7))
+var8={'name':'harsika',
+      'company':'hhh',
+      'mobile':'1234567890'
+      }
+print(type(var8))
