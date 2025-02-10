@@ -1,35 +1,27 @@
-new_operation = input("press enter to make a new operation or type the word exit to finish")
-num1=int(input("enter first number:"))
-num2=int(input("enter second number:"))
-result=0
+ch = "y"
+while ch.lower() == "y":
+    print("Select operation\n1.Add\n2.Subtract\n3.Multiply\n4.Divide\n5.Modulus")
 
-value=input("enter any operation +, -, *, /, % :")
-while new_operation != ("no"):
+    choice = input("Enter choice(1/2/3/4/5):")
 
-    if value == '+' :
-        result = num1+num2
-        print("Addition of {} and {} is".format(num1,num2),result)
-        break
-    elif value == '-':
-        result = num1-num2
-        print("Subtraction of {} and {} is".format(num1,num2),result)
-        break
-        
-    elif value == '*':
-        result = num1*num2
-        print("Multiplication of {} and {} is".format(num1,num2),result)
-    elif value == '/':
-        result = num1/num2
-        print("Division of {} and {} is".format(num1,num2),result)
-    elif value =='%':
-        result = num1%num2
-        print("Modulus of {} and {} is".format(num1,num2),result)
+    num1 = int(input("Enter first number: "))
+    num2 = int(input("Enter second number: "))
+
+    if choice == '1':
+       print(num1,"+",num2,"=", (num1 + num2))
+
+    elif choice == '2':
+       print(num1,"-",num2,"=", (num1 - num2))
+
+    elif choice == '3':
+       print(num1,"*",num2,"=", (num1 * num2))
+
+    elif choice == '4':
+       print(num1,"/",num2,"=", (num1 / num2))
+    elif choice == '5':
+       print(num1,"%",num2,"=", (num1 % num2))
     else:
-        print("no such operation!!!")
-        continue
-new_operation = input("make a new operation")
-while new_operation != ("no"):
-    break
-    continue
-        
-
+       print("Invalid input")
+    ch = input("Continue?y/n:")
+    if ch== "n":
+        break
